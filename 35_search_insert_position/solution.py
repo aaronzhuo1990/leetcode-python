@@ -28,18 +28,28 @@ class Solution(object):
                 right = mid - 1
             else:
                 left = mid + 1
-        if left == num:
+        if left > num-1:
             return num
         if right < 0:
             return 0
 
 
+# array 1
 a = [1, 3, 5, 6]
 s = Solution()
+print("array", a)
 print(s.search_insert_position(a, 5))
 print(s.search_insert_position(a, 2))
 print(s.search_insert_position(a, 7))
 print(s.search_insert_position(a, 0))
-print(s.search_insert_position(a, 6))
 
 
+# array 2
+a = [1, 3, 5, 7, 10, 12, 14]
+print("array", a)
+print(s.search_insert_position(a, 0))
+print(s.search_insert_position(a, 1))
+print(s.search_insert_position(a, 11))
+print(s.search_insert_position(a, 12))
+print(s.search_insert_position(a, 14))
+print(s.search_insert_position(a, 15))
