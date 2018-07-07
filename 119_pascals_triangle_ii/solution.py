@@ -19,7 +19,7 @@ Solution:
 
     From the matrix above, you can see that for row = n, it needs a list which length is n+1
     Besides, we have calculate each row's result based on the last row. For example,
-    when looping through row, we can calculate triangle[1] based on row 1 by: triangle[1] = triangle[1] + triangle[1-1],
+    when looping through row 2, we can calculate triangle[1] based on row 1 by: triangle[1] = triangle[1] + triangle[1-1],
     which is 2. When looping through row 3, we can calculate triangle[2] based on row 2 by:
     triangle[2] = triangle[2] + triangle[2-1] (which is 3) and triangle[1] by:
     triangle[1] = triangle[1] + triangle[1-1] (which is also 3)
