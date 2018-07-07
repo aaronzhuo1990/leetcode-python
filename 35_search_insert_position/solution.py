@@ -6,6 +6,7 @@
 # [1,3,5,6], 7 -> 4
 # [1,3,5,6], 0 -> 0
 
+# Solution: binary search
 
 class Solution(object):
     def search_insert_position(self, array, target):
