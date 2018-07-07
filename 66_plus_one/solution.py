@@ -12,8 +12,13 @@
 
 # Solution, reverse the list and do the calculation from left to right, and then reverse the list
 
+
 class Solution(object):
     def plus_one(self, digits):
+        """
+        :param digits: list[int]
+        :return: list[int]
+        """
         digits.reverse()
         carry = 0
 
