@@ -43,5 +43,5 @@ class Solution(object):
 
 
 s = Solution()
-grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]]
+grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1], [4, 2, 1]]
 print (s.get_min_path_sum(grid))
