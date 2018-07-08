@@ -15,7 +15,7 @@ class Solution(object):
         """
         m = len(matrix)  # row number
         n = len(matrix[0])  # column number
-        pos = []  # keep the element which value is zero
+        pos = []  # keep the element which value is zero, this will use (m * n) extra space for the worst case
 
         for row in range(m):
             for col in range(n):
@@ -25,13 +25,13 @@ class Solution(object):
         for t in pos:
             row, col = t
 
-            # fill zero for the row
+            # fill zeros for the row
             for i in range(col):
                 matrix[row][i] = 0
             for j in range(col+1, n):
                 matrix[row][j] = 0
 
-            # fill zero for the col
+            # fill zeros for the col
             for k in range(row):
                 matrix[k][col] = 0
             for l in range(row+1, m):
