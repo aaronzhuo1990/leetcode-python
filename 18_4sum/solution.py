@@ -45,7 +45,6 @@ class solution(object):
                 while third < last:
                     tmp = nums[first] + nums[second] + nums[third] + nums[last]
                     if tmp == target:
-                        print first, second, third, last
                         result.append([nums[first], nums[second], nums[third], nums[last]])
                         third += 1
                         last -= 1
