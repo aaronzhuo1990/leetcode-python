@@ -28,7 +28,7 @@ class Solution(object):
         """
 
         i = linked_list
-        new, new_head, old, old_head = None, None, None, None
+        new = new_head = old = old_head = None
         while i is not None:
             if i.val < x:
                 if new is None:
