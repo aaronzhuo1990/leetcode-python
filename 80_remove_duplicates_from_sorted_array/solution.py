@@ -9,7 +9,6 @@ Example:
 """
 
 
-
 class Solution(object):
     def remove_duplicates(self, array):
         """
